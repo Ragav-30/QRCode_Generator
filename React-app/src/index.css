@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+#root{
+    font-family: 'Inter', sans-serif;
+    background-color: lightgrey;
+    margin: 0;
+    padding: 0;
+   height: 100vh;
+    box-sizing: border-box;
+    text-align: center;
+   display: flex;
+   gap: 20px;
+}
+.course{
+    border: 1px solid black;
+ 
+    margin: 20px;
+    text-align: center;
+    width: 300px;
+    height: fit-content;
+    background-color: #353b48;
+    color: white;
+    display: inline-block;
+    vertical-align: top;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.course:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+  
+    cursor: pointer;
+}
+.course button{
+    background-color: #0984e3;
+    color: white;
+    border: none;
+ padding: 5px 10px;
+
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+
+    transition: background-color 0.3s ease ,transform 0.5 ease-in-out, box-shadow 0.3 ease-in-out;
+    
+}
+
+.course button:hover{
+    background-color: blue;
+    transform: translateY(-2px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.course img{
+  width: 250px;
+  padding: 10px;
+  border-radius: 15px;   
+  object-fit: cover;
+
+}
+
+#del{
+    margin-left: 10px;
+}
+.course h3{
+    color: white;
+}
+.course p{
+    font-size: 14px;
+   overflow: hidden;
+    color: #dfe6e9;
+}
+.course span{
+    color: red;
+    font-weight: bold;
+}

@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+    font: "inter", sans-serif;
+}
+.app-container{
+    width: 100%;
+    height: 100 vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.qr-code-image{
+    padding: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.input-label{
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #3498db;
+    font-size: 18px;
+}
+
+input[type="text"]{
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+}
+button{
+    padding: 10px;
+    border: none;
+    border-radius: 5 px;
+    cursor: pointer;
+    color: white;
+    margin-left: 25%;
+ 
+    transition: background-color 0.3 ease;
+}
+.generateBtn{
+    background-color: #3498db;
+}
+.generateBtn:disabled{
+    background-color: grey;
+    cursor: not-allowed;
+}
+.downloadBtn{
+    background-color: #27ae60;
+    margin-left: 10px;
+}
+.downloadBtn:hover{
+    background-color:#219a52; 
+
+}
+.app-container h1{
+    font-weight: 600;
+    font-size: 18px;
+    color: #3498db;
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0px; 
+}
