@@ -52,7 +52,7 @@ const  downloadQR =async () => {
             <div>
             <label htmlFor="dataInput" className="input-label">URL:</label>
             <input type="text" id="dataInput" placeholder="Enter URL here"  onChange={(e)=> setUrl(e.target.value)}  />
-            <label htmlFor="sizeInput" className="input-label">Enter the Size of the QR Code needed:</label>
+            <label htmlFor="sizeInput" className="input-label">Enter the Size of the QR Code needed:(eg:100 cm,200 cm)</label>
             <input type="text" id="sizeInput" placeholder="Enter the Size" onChange={(e)=>setSize(e.target.value)} />
             <button className="generateBtn" disabled ={loading} onClick={ generateQR}>Generate QR</button>
             <button className="downloadBtn" disabled= {!img} onClick={downloadQR}>Download QR</button>
